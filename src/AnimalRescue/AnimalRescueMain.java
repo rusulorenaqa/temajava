@@ -9,6 +9,7 @@ public class AnimalRescueMain {
         activity2.name = "play";
         System.out.println(activity1.name);
         System.out.println(activity2.name);
+
         Rescuer rescuer1 = new Rescuer();
         rescuer1.name = "Ion Popescu";
         rescuer1.money = 500;
@@ -17,6 +18,8 @@ public class AnimalRescueMain {
         rescuer2.money = 1400;
         System.out.println(rescuer1.name + " " + rescuer1.money);
         System.out.println(rescuer2.name + " " + rescuer2.money);
+
+
         Medic medic1 = new Medic();
         medic1.name = "Alexandru George";
         medic1.speciality = "Dentist";
@@ -25,6 +28,8 @@ public class AnimalRescueMain {
         medic2.speciality = "Oftalmolog";
         System.out.println(medic1.name + " " + medic1.speciality);
         System.out.println(medic2.name + " " + medic2.speciality);
+
+
         Food food1 = new Food();
         food1.name = "Cereals";
         food1.price = 20;
@@ -37,6 +42,8 @@ public class AnimalRescueMain {
         food2.stock = 9;
         System.out.println(food1.name + " " + food1.price + " " + food1.quantity + " " + food1.stock);
         System.out.println(food2.name + " " + food2.price + " " + food2.quantity + " " + food2.stock);
+
+
         Animal dog = new Animal();
         dog.name = "Rex";
         dog.age = 3;
