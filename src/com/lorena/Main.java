@@ -1,5 +1,4 @@
 package com.lorena;
-
 public class Main {
     public static void main(String[] args) {
         Calculator objectCalculator = new Calculator();
@@ -10,29 +9,30 @@ public class Main {
         objectCalculator.displayDivide(2, 3);
         // ex 3
         LogicalOp operatii = new LogicalOp();
-        int biggest = operatii.checkBiggerNumber(6,6);
-        System.out.println(" Numarul mai mare este: "+ biggest);
+        int biggest = operatii.checkBiggerNumber(7, 6);
+        System.out.println(" Numarul mai mare este: " + biggest);
         //ex 4
-        operatii.compareText("FastTrackI");
+        System.out.println(operatii.compareText("FastTrackI"));
         // ex 5
-        operatii.compareTextNumber("FastTrack",2);
+        System.out.println(operatii.compareTextNumber("FastTrack", 2));
         //ex 6
-        operatii.greater(3);
-        operatii.greater(4);
-        operatii.greater(3.6);
-        operatii.greater(2.7);
+        System.out.println(operatii.greater(3));
+        System.out.println(operatii.greater(4));
+        System.out.println(operatii.greater(3.6));
+        System.out.println(operatii.greater(2.7));
         //ex 7
-        operatii.number(6);
-        operatii.number(9);
-        operatii.number(8);
-        operatii.number(3);
+        System.out.println(operatii.number(6));
+        System.out.println(operatii.number(9));
+        System.out.println(operatii.number(8));
+        System.out.println(operatii.number(3));
         //ex 8
         operatii.printNumber(15);
         //ex 9
-        operatii.isNumberEven(15);
+        System.out.println(operatii.isNumberEven(15));
         //ex 10
-        operatii.isEligibleToVote(18);
+        System.out.println(operatii.isEligibleToVote(18));
         //ex 11
-        operatii.bigger(16,15,14);
+        System.out.println(operatii.bigger(14, 14, 16));
 
-    }}
+    }
+}

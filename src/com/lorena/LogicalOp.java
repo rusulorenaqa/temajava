@@ -1,49 +1,63 @@
 package com.lorena;
 
 public class LogicalOp {
-    public int checkBiggerNumber(int first, int second){
-        if(first>second){
-            return first;}
-        else if(first==second){
+    // ex 3
+    public int checkBiggerNumber(int first, int second) {
+        if (first > second) {
+            return first;
+        } else if (first == second) {
             return second;
-        }else {return second;}
+        } else {
+            return second;
         }
+    }
 
-        public void compareText(String text){
+    // ex 4
+    public String compareText(String text) {
         String fast = "FastTrackIT";
-        if(text.equals(fast)){
-            System.out.println("Learning text comparison!");
-        } else{
-            System.out.println("Got to try some more!");
-        }}
-        public void compareTextNumber(String a, int b){
+        if (text.equals(fast)) {
+            return "Learning text comparison";
+        } else {
+            return "Got to try some more!";
+        }
+    }
+
+    // ex 5
+    public String compareTextNumber(String a, int b) {
         String text = "FastTrackIT";
-        if(a.equals(text) && b<=3){
-            System.out.println(a+ " " +b);}
-            else if (!a.equals(text) && b>=4){
-                System.out.println(b+" "+a);
-            }
-            else {
-            System.out.println("Try again!");
-        }}
-        public void number(int c){
-        if (c>8||c==6){
-            System.out.println("The amount of snow this winter was(cm): "+ c);}
-            else{
-                System.out.println("The forecast snow is(cm):"+ c); }
+        if (a.equals(text) && b <= 3) {
+            return a + " " + b;
+        } else if (!a.equals(text) && b >= 4) {
+            return b + " " + a;
+        } else {
+            return "Try again!";
         }
-        public void greater(double d){
-        if (d>3&&d!=4){
-            System.out.println("The number is greater than 3 and not equal to 4:"+d );}
-            else if(d==4){
-            System.out.println("The number is equal to 4:"+d);}
-            else if(d<3){
-            System.out.println("The number is lower than 3: "+d);}
-            else {
-            System.out.println("Try again!");
+    }
+
+    //ex 6
+    public String number(int c) {
+        if (c > 8 || c == 6) {
+            return "The amount of snow this winter was(cm): " + c;
+        } else {
+            return "The forecast snow is(cm):" + c;
         }
+    }
+
+    //ex 7
+    public String greater(double d) {
+        if (d > 3 && d != 4) {
+            return "The number is greater than 3 and not equal to 4:" + d;
+        } else if (d == 4) {
+            return "The number is equal to 4:" + d;
+        } else if (d < 3) {
+            return "The number is lower than 3: " + d;
+        } else {
+            return "Try again!";
         }
-        public void printNumber(int caseNumber) {
+    }
+
+    // ex 8
+    public void printNumber(int caseNumber) {
         switch (caseNumber) {
             case 1:
                 System.out.println("The number is 1");
@@ -58,32 +72,42 @@ public class LogicalOp {
                 System.out.println("The number is 4");
                 break;
             default:
-                System.out.println("Insert a number between 1 and 4"); }
+                System.out.println("Insert a number between 1 and 4");
+        }
     }
 
-        public void isNumberEven(double i){
-        if(i%2==0){
-            System.out.println("True "+ i +" is even");
+    // ex 9
+    public boolean isNumberEven(double i) {
+        if (i % 2 == 0) {
+            return true;
+        } else {
+            return false;
         }
-        else {
-            System.out.println("False " + i + " is odd");
-        }}
-        public void isEligibleToVote(int v){
-        if(v>=18){
-                System.out.println("True"); }
-        else {
-            System.out.println("False");
-        }}
-        public void bigger(int a, int b, int c){
-        if(a>b&&a>c){
-            System.out.println(a);}
-        else if(b>a&&b>c){
-            System.out.println(b);}
-        else if(c>a&&c>b){
-            System.out.println(c);}
-        }}
+    }
 
+    //ex 10
+    public boolean isEligibleToVote(int v) {
+        if (v >= 18) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
+    //ex 11
+    public int bigger(int a, int b, int c) {
+        int maxim;
+        if (a > b) {
+            maxim = a;
+        } else {
+            maxim = b;
+        }
+        if (c > maxim) {
+            maxim = c;
+        }
+        return maxim;
+    }
+}
 
 
 
