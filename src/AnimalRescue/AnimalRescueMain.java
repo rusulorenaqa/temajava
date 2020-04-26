@@ -4,69 +4,69 @@ public class AnimalRescueMain {
 
     public static void main(String[] args) {
         Activity activity1 = new Activity();
-        activity1.name = "eat";
+        activity1.setName("eat");
         Activity activity2 = new Activity();
-        activity2.name = "play";
-        System.out.println(activity1.name);
-        System.out.println(activity2.name);
+        activity2.setName("play");
+        System.out.println(activity1.getName());
+        System.out.println(activity2.getName());
 
         Rescuer rescuer1 = new Rescuer();
-        rescuer1.name = "Ion Popescu";
-        rescuer1.money = 500;
+        rescuer1.setName("Ion Popescu");
+        rescuer1.setMoney(500);
         Rescuer rescuer2 = new Rescuer();
-        rescuer2.name = "Florin Pavel";
-        rescuer2.money = 1400;
-        System.out.println(rescuer1.name + " " + rescuer1.money);
-        System.out.println(rescuer2.name + " " + rescuer2.money);
+        rescuer2.setName("Florin Pavel");
+        rescuer2.setMoney(1400);
+        System.out.println(rescuer1.getName() + " " + rescuer1.getMoney());
+        System.out.println(rescuer2.getName() + " " + rescuer2.getMoney());
 
 
         Medic medic1 = new Medic();
-        medic1.name = "Alexandru George";
-        medic1.speciality = "Dentist";
+        medic1.setName("Alexandru George");
+        medic1.setSpeciality("Dentist");
         Medic medic2 = new Medic();
-        medic2.name = "Andrei Tudor";
-        medic2.speciality = "Oftalmolog";
-        System.out.println(medic1.name + " " + medic1.speciality);
-        System.out.println(medic2.name + " " + medic2.speciality);
+        medic2.setName("Andrei Tudor");
+        medic2.setSpeciality("Oftalmolog");
+        System.out.println(medic1.getName() + " " + medic1.getSpeciality());
+        System.out.println(medic2.getName() + " " + medic2.getSpeciality());
 
 
         Food food1 = new Food();
-        food1.name = "Cereals";
-        food1.price = 20;
-        food1.quantity = 2;
-        food1.stock = 15;
+        food1.setName("Cereals");
+        food1.setPrice(20);
+        food1.setQuantity(2);
+        food1.setStock(15);
         Food food2 = new Food();
-        food2.name = "Meat";
-        food2.price = 35;
-        food2.quantity = 6;
-        food2.stock = 9;
-        System.out.println(food1.name + " " + food1.price + " " + food1.quantity + " " + food1.stock);
-        System.out.println(food2.name + " " + food2.price + " " + food2.quantity + " " + food2.stock);
+        food2.setName("Meat");
+        food2.setPrice(35);
+        food2.setQuantity(4);
+        food2.setStock(3);
+        System.out.println(food1.getName() + " " + food1.getPrice() + " " + food1.getQuantity() + " " + food1.getStock());
+        System.out.println(food2.getName() + " " + food2.getPrice() + " " + food2.getQuantity() + " " + food2.getStock());
 
 
         Animal dog = new Animal();
-        dog.name = "Rex";
-        dog.age = 3;
-        dog.health = 4;
-        dog.hunger = 3;
-        dog.joy = 2;
-        dog.favoriteActivity = activity1;
-        dog.favoriteFood = food1;
+        dog.setName("Rex");
+        dog.setAge(3);
+        dog.setHealth(4);
+        dog.setHunger(3);
+        dog.setJoy(6);
+        dog.setFavoriteActivity(activity1);
+        dog.setFavoriteFood(food1);
         Animal cat = new Animal();
-        cat.name = "Ema";
-        cat.age = 15;
-        cat.health = 8;
-        cat.hunger = 4;
-        cat.joy = 6;
-        cat.favoriteFood = food2;
-        cat.favoriteActivity = activity2;
+        cat.setName("Ema");
+        cat.setAge(15);
+        cat.setHealth(7);
+        cat.setHunger(4);
+        cat.setJoy(4);
+        cat.setFavoriteFood(food2);
+        cat.setFavoriteActivity(activity2);
 
-        System.out.println(dog.name + " " + dog.age + " " + dog.health + " " + dog.hunger + " " + dog.joy
-                + " " + dog.favoriteFood.name + " " + dog.favoriteActivity.name);
-        System.out.println("Mancarea preferata a lui Rex este: " + dog.favoriteFood.name);
-        System.out.println("Cantitatea de mancare a lui Rex este: " + dog.favoriteFood.quantity);
-        System.out.println(cat.name + " " + cat.age + " " + cat.health + " " + cat.hunger + " " + cat.joy
-                + " " + cat.favoriteFood.name + " " + cat.favoriteActivity.name);
+        System.out.println(dog.getName() + " " + dog.getAge() + " " + dog.getHealth() + " " + dog.getHunger() + " " + dog.getJoy()
+                + " " + dog.getFavoriteFood().getName() + " " + dog.getFavoriteActivity().getName());
+        System.out.println("Mancarea preferata a lui Rex este: " + dog.getFavoriteFood().getName());
+        System.out.println("Cantitatea de mancare a lui Rex este: " + dog.getFavoriteFood().getQuantity());
+        System.out.println(cat.getName() + " " + cat.getAge() + " " + cat.getHealth() + " " + cat.getHunger() + " " + cat.getJoy()
+                + " " + cat.getFavoriteFood().getName() + " " + cat.getFavoriteActivity().getName());
         dog.executeActivity();
         cat.executeActivity();
         dog.eatFood();
