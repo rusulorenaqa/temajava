@@ -33,6 +33,29 @@ public class Main {
         System.out.println(operatii.isEligibleToVote(18));
         //ex 11
         System.out.println(operatii.bigger(14, 14, 16));
+        // TEMA FOR
+        // ex 1
+        operatii.countHundred(35);
+        // ex 2
+        operatii.countMinusHundred(3);
+        // ex 3
+        operatii.countBetween(5,3);
+        operatii.countBetween(3,5);
+        // ex 4
+        operatii.countMinToMax(4,6);
+        operatii.countMinToMax(6,6);
+        //ex 5
+        operatii.countEven();
+        //ex 6
+        operatii.countUneven();
+        // ex 7
+        System.out.println(operatii.sumToHundred(99));
+        //ex 8
+        System.out.println(operatii.averageToHundred(97));
+        //ex 9
+        operatii.show();
+
 
     }
+
 }

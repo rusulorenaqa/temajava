@@ -1,5 +1,7 @@
 package com.lorena;
 
+import org.w3c.dom.ls.LSOutput;
+
 public class LogicalOp {
     // ex 3
     public int checkBiggerNumber(int first, int second) {
@@ -107,6 +109,91 @@ public class LogicalOp {
         }
         return maxim;
     }
+
+    public void countHundred(int a) {
+        for (int i = a; i <= 100; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public void countMinusHundred(int a) {
+        for (int i = a; i >= -100; i--) {
+            System.out.println(i);
+        }
+    }
+
+    public void countBetween(int a, int b) {
+        //a>b
+        for (int i = a; i >= b; i--) {
+            System.out.println(i);
+        }
+        //a<b
+        for (int i = a; i <= b; i++) {
+            System.out.println(i);
+        }
+    }
+
+    public void countMinToMax(int a, int b) {
+        int min;
+        int max;
+        if (a < b) {
+            min = a;
+            max = b;
+        } else {
+            min = b;
+            max = a;
+        }
+        for (int i = min; i <= max; i++) {
+            System.out.println(i);
+        }
+
+    }
+
+    public void countEven() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void countUneven() {
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 == 1) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public int sumToHundred(int a) {
+        int sum = 0;
+        for (int i = a; i <= 100; i++) {
+            sum = sum + i;
+        }
+        return sum;
+    }
+
+    public float averageToHundred(int a) {
+        float sum = 0;
+        float count = 0;
+        for (int i = a; i <= 100; i++) {
+            sum = sum + i;
+            count++;
+        }
+        return sum / count;
+    }
+
+    public void show() {
+        for (int j = 7; j >= 1; j--) {
+            String text = "";
+            for (int i = j; i >= 1; i--) {
+                text = text + "*";
+            }
+            System.out.println(text);
+        }
+
+    }
+
 }
 
 
