@@ -1,15 +1,8 @@
 package AnimalRescue;
 
-public class Medic {
-    private String name;
+public class Medic extends Human{
     private String speciality;
 
-    public void setName(String newName){
-        this.name= newName;
-    }
-    public String getName(){
-        return name;
-    }
     public void setSpeciality(String newSpeciality){
         this.speciality=newSpeciality;
     }

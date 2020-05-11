@@ -44,7 +44,7 @@ public class AnimalRescueMain {
         System.out.println(food2.getName() + " " + food2.getPrice() + " " + food2.getQuantity() + " " + food2.getStock());
 
 
-        Animal dog = new Animal();
+        Dog dog = new Dog();
         dog.setName("Rex");
         dog.setAge(3);
         dog.setHealth(4);
@@ -52,7 +52,7 @@ public class AnimalRescueMain {
         dog.setJoy(6);
         dog.setFavoriteActivity(activity1);
         dog.setFavoriteFood(food1);
-        Animal cat = new Animal();
+        Cat cat = new Cat();
         cat.setName("Ema");
         cat.setAge(15);
         cat.setHealth(7);
@@ -71,5 +71,11 @@ public class AnimalRescueMain {
         cat.executeActivity();
         dog.eatFood();
         cat.eatFood();
+
+        Duck duck= new Duck();
+        duck.setName("Donald");
+        duck.fly();
+
+
     }
 }

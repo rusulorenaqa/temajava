@@ -1,15 +1,9 @@
 package AnimalRescue;
 
-public class Rescuer {
-    private String name;
+public class Rescuer extends Human {
+
     private float money;
 
-    public void setName(String newName){
-        this.name=newName;
-    }
-    public String getName(){
-        return name;
-    }
     public void setMoney(float newMoney){
         this.money = newMoney;
     }
