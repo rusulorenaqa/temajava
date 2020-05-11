@@ -54,6 +54,30 @@ public class Main {
         System.out.println(operatii.averageToHundred(97));
         //ex 9
         operatii.show();
+        //Tema while
+        //ex 1
+        operatii.countToHundredwhile(90);
+        //ex 2
+        operatii.countToMinusHundredWhile(4);
+        //ex 3
+        operatii.problemaTrei(8,5);
+        //ex 4
+        operatii.countFirstToSecond(10,2);
+        //ex 5
+        operatii.problemaCinci();
+        //ex 6
+        operatii.problemaSase();
+        //ex 7
+        operatii.problemaSapte();
+        //ex 8
+        System.out.println(operatii.problemaOpt(3,10));
+        //ex 9
+        operatii.fibonacci();
+        //ex 10
+        operatii.CozaLozaWoza();
+
+
+
 
 
     }

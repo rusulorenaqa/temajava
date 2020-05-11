@@ -1,7 +1,5 @@
 package com.lorena;
 
-import org.w3c.dom.ls.LSOutput;
-
 public class LogicalOp {
     // ex 3
     public int checkBiggerNumber(int first, int second) {
@@ -194,7 +192,149 @@ public class LogicalOp {
 
     }
 
+    public void countToHundredwhile(int a) {
+        while (a <= 100 && a >= 1) {
+            System.out.println(a);
+            a++;
+        }
+    }
+
+    public void countToMinusHundredWhile(int a) {
+        while (a >= -100) {
+            System.out.println(a);
+            a--;
+        }
+    }
+
+    public void countFirstToSecond(int a, int b) {
+        while (a <= b) {
+            System.out.println(a);
+            a++;
+        }
+        while (a >= b) {
+            System.out.println(b);
+            b++;
+        }
+    }
+
+    public void problemaTrei(int a, int b) {
+        while (a <= b) {
+            System.out.println(a);
+            a++;
+        }
+        while (a >= b) {
+            System.out.println(a);
+            a--;
+        }
+
+    }
+
+    public void problemaCinci() {
+        int a = 0;
+        while (a <= 100) {
+            if (a % 2 == 0) {
+                System.out.println(a);
+            }
+            a++;
+        }
+    }
+
+    public void problemaSase() {
+        int a = 0;
+        while (a <= 100) {
+            if (a % 2 != 0) {
+                System.out.println(a);
+            }
+            a++;
+        }
+
+    }
+
+    public void problemaSapte() {
+        int min = 111;
+        int max = 8899;
+        int count = 0;
+        int sum = 0;
+        while (min <= max) {
+            sum = sum + min;
+            count = count + 1;
+            min++;
+        }
+        System.out.println(sum);
+        System.out.println(sum / count);
+
+    }
+
+    public int problemaOpt(int a, int b) {
+        int sum = 0;
+        while (a >= b) {
+            if (a % 7 == 0) {
+                sum = sum + a;
+            }
+            a--;
+        }
+        while (a < b) {
+            if (a % 7 == 0) {
+                sum = sum + a;
+            }
+            a++;
+
+        }
+        return sum;
+    }
+
+    public void fibonacci() {
+        int a = 0;
+        int b = 1;
+        int count = 0;
+        while (count <= 20) {
+            int c = a + b;
+            System.out.println(c);
+            a = b;
+            b = c;
+            count = count + 1;
+        }
+    }
+
+    public void CozaLozaWoza() {
+        int count = 1;
+        String text = "";
+        int i =0;
+        while(i <= 110) {
+            if (count <=11) {
+
+                if (i % 3 == 0) {
+                    text = text + "Coza";
+                }
+                if (i % 5 == 0) {
+                    text = text + "Loza";
+                    ;
+                }
+                if (i % 7 == 0) {
+                    text = text + "Woza";
+                }
+                if (i % 3 != 0 && i % 5 != 0 && i % 7 != 0) {
+                    text = text + i;
+                }
+                text=text+ " ";
+                count++;
+            } else {
+                System.out.println(text);
+                i=i-1;
+                text="";
+                count=1;
+
+            }
+            i++;
+
+        }
+    }
 }
+
+
+
+
+
 
 
 
