@@ -74,7 +74,10 @@ public class AnimalRescueMain {
 
         Duck duck= new Duck();
         duck.setName("Donald");
+        duck.setFavoriteActivity(activity2);
         duck.fly();
+        duck.eatFood();
+        duck.executeActivity();
 
 
     }
