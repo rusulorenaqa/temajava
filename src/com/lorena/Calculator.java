@@ -38,9 +38,19 @@ public class Calculator {
         System.out.println("Lorena");
     }
 
+    public void sayHello(int x, String v) {
+        System.out.println(x+v); }
+
+
     public double displayDivide(double a, double b) {
         System.out.println("Impartirea dintre numere este: " + (a / b));
         return a / b;
+    }
+
+    public double displayDivide(double a, double b, double c) {
+        System.out.println("Impartirea dintre primele 2 numere este: " + (a / b));
+        System.out.println("Impartirea dintre ultimele 2 numere este: " + (b / c));
+        return a/c;
     }
 
     public void operatia1() {
@@ -66,6 +76,11 @@ public class Calculator {
     public int sum(int a, int b) {
         return a + b;
     }
+    public int sum(int a, int b, int c) {
+        System.out.println(a+b+c);
+        return a + b+c;
+    }
+
 
     public int displaySum(int a, int b) {
         System.out.println(" Rezultatul adunarii numerelor este: " + (a + b));
@@ -76,6 +91,10 @@ public class Calculator {
         return a - b;
     }
 
+    public int substract(int a, int b, int c, int d) {
+        return a-b-c-d;
+    }
+
     public int displaySubstract(int a, int b) {
         System.out.println(" Rezultatul scaderii numerelor este: " + (a - b));
         return a - b;
@@ -83,6 +102,9 @@ public class Calculator {
 
     public float multiply(float a, float b) {
         return a * b;
+    }
+    public float multiply(float a, float b, float c) {
+        return a * b *c;
     }
 
     public float displayMultiply(float a, float b) {
@@ -109,6 +131,9 @@ public class Calculator {
 
     public double average(double a, double b, double c) {
         return ((a + b + c) / 3);
+    }
+    public double average(double a, double b, double c, double d) {
+        return ((a + b + c+d) / 4);
     }
 
     public void showFace() {

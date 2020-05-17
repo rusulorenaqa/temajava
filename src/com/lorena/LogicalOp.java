@@ -299,9 +299,9 @@ public class LogicalOp {
     public void CozaLozaWoza() {
         int count = 1;
         String text = "";
-        int i =0;
-        while(i <= 110) {
-            if (count <=11) {
+        int i = 0;
+        while (i <= 110) {
+            if (count <= 11) {
 
                 if (i % 3 == 0) {
                     text = text + "Coza";
@@ -316,18 +316,129 @@ public class LogicalOp {
                 if (i % 3 != 0 && i % 5 != 0 && i % 7 != 0) {
                     text = text + i;
                 }
-                text=text+ " ";
+                text = text + " ";
                 count++;
             } else {
                 System.out.println(text);
-                i=i-1;
-                text="";
-                count=1;
+                i = i - 1;
+                text = "";
+                count = 1;
 
             }
             i++;
 
         }
+    }
+
+    //ex 2
+    public void writeArray() {
+        int[] array = new int[100];
+        array[0] = 1;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = i + 1;
+            System.out.println(array[i]);
+        }
+    }
+
+    //ex 3
+    public int[] evenArray(int[] arrayGol) {
+        for (int i = 0; i < 100; i++) {
+            if (i % 2 == 0) {
+                arrayGol[i / 2] = i;
+            }
+        }
+        return arrayGol;
+    }
+
+    // ex 4
+    public float averageArray(int[] array) {
+        int count = 0;
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            sum = sum + array[i];
+            count = count + 1;
+        }
+        return sum / count;
+    }
+    //ex 5
+
+    public boolean verifyArray(String[] array, String name) {
+        for (int i = 0; i < array.length; i++) {
+            if (name.equals(array[i])) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
+    //ex 6
+    public int position(int[] array, int numar) {
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == numar) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    //ex 7
+    public void arrayMatrice() {
+        String[] arr = new String[10];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
+                arr[i] = "- ";
+                System.out.print(arr[i]);
+            }
+            System.out.println();
+        }
+    }
+
+    //ex 8
+    public int[] sirFaraNumar(int[] array, int number) {
+        int count = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == number) {
+                count = count + 1;
+                for (int j = i; j < (array.length - 1); j++) {
+                    array[j] = array[j + 1];
+                }
+            }
+        }
+        int[] arrayNew = new int[array.length - count];
+        for (int z = 0; z < arrayNew.length; z++) {
+            arrayNew[z] = array[z];
+        }
+        return arrayNew;
+    }
+
+    //ex 9
+    public int secondLowest() {
+        int[] arr;
+        arr = new int[4];
+        arr[0] = 4;
+        arr[1] = 5;
+        arr[2] = 6;
+        arr[3] = 2;
+        int lowest = arr[0];
+        int count = 0;
+        for (int i = 0; i < 3; i++) {
+            if (lowest > arr[i]) {
+                lowest = arr[i];
+            }
+        }
+        return lowest;
+    }
+
+
+
+    // ex 10
+
+    public int[] twoArray(int[] array1, int[] array2) {
+        for (int i = 0; i < array1.length; i++) {
+            array2[i] = array1[i];
+        }
+        return array2;
     }
 }
 

@@ -76,6 +76,61 @@ public class Main {
         //ex 10
         operatii.CozaLozaWoza();
 
+        //tema Arrays
+        //ex 1
+        objectCalculator.sayHello(3, "Lorena");
+        objectCalculator.sum(2,3,4);
+        System.out.println(objectCalculator.substract(2,3,4,5));
+        System.out.println(objectCalculator.multiply(2,3,4));
+        //ex 2
+        operatii.writeArray();
+        //ex 3
+        int [] array = new int[50];
+        int[] arrayplin = operatii.evenArray(array);
+        for(int i =0; i<50; i++){
+            System.out.println(arrayplin[i]);
+        }
+        //ex 4
+        int [] arrayAverage = new int[]{2,3,4};
+        float average=operatii.averageArray(arrayAverage);
+        System.out.println(average);
+
+        //ex 5
+        String [] arrayName= new String[]{"Mihai", "Alin", "Calin"};
+        String name=new String("Alin");
+        boolean verify=operatii.verifyArray(arrayName, name);
+        System.out.println(verify);
+        //ex 6
+        int [] arrayNumbers=new int[]{2,3,9,5,7,};
+        int numar=4;
+        int pole=operatii.position(arrayNumbers,numar);
+        System.out.println(pole);
+        //ex 7
+        operatii.arrayMatrice();
+
+        //ex 8
+        int [] arrayNr=new int[]{4,6,8,11,14,17,8};
+        int number=8;
+        int[] arrayNou =operatii.sirFaraNumar(arrayNr,number);
+        for(int i =0; i<arrayNou.length; i++){
+        System.out.println(arrayNou[i]);}
+
+        // ex 9
+
+        int lowest = operatii.secondLowest();
+        System.out.println(lowest);
+
+        // ex 10
+        int [] arrayone=new int[]{1,2,3,4,5};
+        int [] arraytwo= new int[5];
+        int [] arrayBun=operatii.twoArray(arrayone, arraytwo);
+        for(int i =0; i<arrayBun.length;i++){
+        System.out.println(arrayBun[i]);}
+
+
+
+
+
 
 
 
