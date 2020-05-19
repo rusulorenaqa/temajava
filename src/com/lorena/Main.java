@@ -127,6 +127,32 @@ public class Main {
         for(int i =0; i<arrayBun.length;i++){
         System.out.println(arrayBun[i]);}
 
+        //Tema optionala Arrays
+        //ex 1
+        int [] sir = new int[]{3,9,6,7,8,10};
+        operatii.findSecondLowest(sir);
+        //ex 2
+        int [] sirDat= new int[]{3,4,5,6,7,9};
+        operatii.insertElement(sirDat, 4, 2);
+        //ex 3
+        int[] sirSecond = new int[]{4, 5, 1, 2, 5, 7};
+        operatii.findMinMax(sirSecond);
+        //ex 4
+        int [] arr1=new int[]{1,2,3};
+        operatii.reverse(arr1);
+        //ex 5
+        operatii.findAllDuplicates();
+        //ex 6
+        operatii.compareArr();
+        //ex 7
+        int [] sirNesort= new int[]{2,5,8,9,3,1};
+        int [] sirSortat= operatii.sort(sirNesort);
+        for(int i=0; i<sirSortat.length; i++){
+            System.out.println(sirSortat[i]);
+        }
+
+
+
 
 
 

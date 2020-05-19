@@ -1,5 +1,7 @@
 package com.lorena;
 
+import java.util.Arrays;
+
 public class LogicalOp {
     // ex 3
     public int checkBiggerNumber(int first, int second) {
@@ -431,7 +433,6 @@ public class LogicalOp {
     }
 
 
-
     // ex 10
 
     public int[] twoArray(int[] array1, int[] array2) {
@@ -440,6 +441,100 @@ public class LogicalOp {
         }
         return array2;
     }
+
+    // tema optionala Java Array
+    //ex 1
+    public int findSecondLowest(int[] sir) {
+        Arrays.sort(sir);
+        System.out.println(sir[1]);
+        return sir[1];
+    }
+
+    //ex 2
+    public int[] insertElement(int[] sir, int a, int pozitie) {
+        int[] sir2 = new int[sir.length + 1];
+        for (int i = 0; i <= sir.length; i++) {
+            if (i < pozitie) {
+                sir2[i] = sir[i];
+            }
+            if (i == pozitie) {
+                sir2[i] = a;
+            }
+            if (i > pozitie) {
+                sir2[i] = sir[i - 1];
+            }
+            System.out.println(sir2[i]);
+        }
+        return sir2;
+    }
+
+    //ex 3
+    public void findMinMax(int[] sir) {
+        int min = sir[0];
+        int max = sir[0];
+        for (int i = 0; i < sir.length; i++) {
+            if (sir[i] < min) {
+                min = sir[i];
+            }
+            if (sir[i] > max) {
+                max = sir[i];
+            }
+        }
+        System.out.println(min + " " + max);
+
+    }
+
+    //ex 4
+    public int[] reverse(int[] arr) {
+        int[] arr2 = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            arr2[i] = arr[arr.length - 1 - i];
+            System.out.println(arr2[i]);
+        }
+        return arr2;
+    }
+
+    //ex 5
+    public int countDuplicate(int[] sir, int a) {
+        int count = 0;
+        for (int i = 0; i < sir.length; i++) {
+            if (sir[i] == a) {
+                count += 1;
+
+            }
+        }
+        return count;
+    }
+
+    public void findAllDuplicates() {
+        int[] array = new int[]{4, 5, 5, 5, 9, 9, 9, 3, 3};
+        for (int i = 0; i < array.length; i++) {
+            if ((countDuplicate(array, array[i])) > 1) {
+                System.out.println(array[i]);
+            }
+        }
+    }
+
+    //ex 6
+    public void compareArr() {
+        int[] sir = new int[]{2, 4, 5, 6, 7, 8};
+        int[] sir2 = new int[]{3, 4, 5, 6, 7, 8, 12};
+        for (int i = 0; i < sir.length; i++) {
+            if ((countDuplicate(sir2, sir[i])) >= 1) {
+                System.out.println(sir[i]);
+            }
+        }
+
+    }
+
+
+    //ex 7
+    public int[] sort(int[] arr) {
+        Arrays.sort(arr);
+        return arr;
+    }
+
+
 }
 
 

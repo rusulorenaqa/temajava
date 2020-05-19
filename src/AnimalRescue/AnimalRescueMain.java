@@ -5,6 +5,8 @@ public class AnimalRescueMain {
     public static void main(String[] args) {
         Activity activity1 = new Activity();
         activity1.setName("eat");
+
+
         Activity activity2 = new Activity();
         activity2.setName("play");
         System.out.println(activity1.getName());
@@ -13,6 +15,8 @@ public class AnimalRescueMain {
         Rescuer rescuer1 = new Rescuer();
         rescuer1.setName("Ion Popescu");
         rescuer1.setMoney(500);
+
+
         Rescuer rescuer2 = new Rescuer();
         rescuer2.setName("Florin Pavel");
         rescuer2.setMoney(1400);
@@ -23,6 +27,8 @@ public class AnimalRescueMain {
         Medic medic1 = new Medic();
         medic1.setName("Alexandru George");
         medic1.setSpeciality("Dentist");
+
+
         Medic medic2 = new Medic();
         medic2.setName("Andrei Tudor");
         medic2.setSpeciality("Oftalmolog");
@@ -35,6 +41,8 @@ public class AnimalRescueMain {
         food1.setPrice(20);
         food1.setQuantity(2);
         food1.setStock(15);
+
+
         Food food2 = new Food();
         food2.setName("Meat");
         food2.setPrice(35);
@@ -52,6 +60,8 @@ public class AnimalRescueMain {
         dog.setJoy(6);
         dog.setFavoriteActivity(activity1);
         dog.setFavoriteFood(food1);
+
+
         Cat cat = new Cat();
         cat.setName("Ema");
         cat.setAge(15);
@@ -78,7 +88,5 @@ public class AnimalRescueMain {
         duck.fly();
         duck.eatFood();
         duck.executeActivity();
-
-
     }
 }
