@@ -201,6 +201,34 @@ public class Main {
         operatii.returnBiggest(nesortata);
 
 
-    }
 
-}
+    // Tema optionala Lists
+    // ex 1
+       List myLi = new ArrayList<Integer>();
+        myLi.add(1);
+        myLi.add(2);
+        myLi.add(3);
+        myLi.add(4);
+        myLi.add(5);
+        operatii.changePositions(myLi);
+        //ex 2
+        List myLis = new ArrayList<Integer>();
+        myLis.add(1);
+        myLis.add(2);
+        myLis.add(3);
+        myLis.add(4);
+        myLis.add(5);
+        operatii.evenList(myLis);
+        //ex 3
+        List myLista = new ArrayList<Integer>();
+        myLista.add(7);
+        myLista.add(2);
+        myLista.add(5);
+        myLista.add(4);
+        myLista.add(8);
+        operatii.sortList(myLista);
+
+
+
+
+}}

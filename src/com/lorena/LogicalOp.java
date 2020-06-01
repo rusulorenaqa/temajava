@@ -1,5 +1,6 @@
 package com.lorena;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -582,8 +583,41 @@ public class LogicalOp {
         return nume.get(nume.size() - 1);
     }
 
+    // Tema optionala Lists
+    // ex 1
+    public void changePositions(List nume) {
+        nume.add(0, nume.get(nume.size() - 1));
+        nume.remove(nume.size() - 1);
+        nume.add(nume.size(), 1);
+        nume.remove(1);
+        System.out.println(nume.toString());
+    }
+
+    //ex 2
+    public List evenList(List<Integer> nume) {
+        List listaGoala = new ArrayList();
+        for (int i = 0; i < nume.size(); i++) {
+            if (nume.get(i) % 2 == 0) {
+                listaGoala.add(nume.get(i));
+            }
+        }
+        System.out.println(listaGoala.toString());
+        return listaGoala;
+
+
+    }
+    //ex 3
+    public List sortList( List<Integer> nume){
+        nume.sort((elem1, elem2)->elem1-elem2);
+        System.out.println(nume.toString());
+        return nume;
+    }
+
+
 
 }
+
+
 
 
 
