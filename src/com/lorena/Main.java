@@ -1,4 +1,8 @@
 package com.lorena;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         Calculator objectCalculator = new Calculator();
@@ -39,11 +43,11 @@ public class Main {
         // ex 2
         operatii.countMinusHundred(3);
         // ex 3
-        operatii.countBetween(5,3);
-        operatii.countBetween(3,5);
+        operatii.countBetween(5, 3);
+        operatii.countBetween(3, 5);
         // ex 4
-        operatii.countMinToMax(4,6);
-        operatii.countMinToMax(6,6);
+        operatii.countMinToMax(4, 6);
+        operatii.countMinToMax(6, 6);
         //ex 5
         operatii.countEven();
         //ex 6
@@ -60,9 +64,9 @@ public class Main {
         //ex 2
         operatii.countToMinusHundredWhile(4);
         //ex 3
-        operatii.problemaTrei(8,5);
+        operatii.problemaTrei(8, 5);
         //ex 4
-        operatii.countFirstToSecond(10,2);
+        operatii.countFirstToSecond(10, 2);
         //ex 5
         operatii.problemaCinci();
         //ex 6
@@ -70,7 +74,7 @@ public class Main {
         //ex 7
         operatii.problemaSapte();
         //ex 8
-        System.out.println(operatii.problemaOpt(3,10));
+        System.out.println(operatii.problemaOpt(3, 10));
         //ex 9
         operatii.fibonacci();
         //ex 10
@@ -79,41 +83,42 @@ public class Main {
         //tema Arrays
         //ex 1
         objectCalculator.sayHello(3, "Lorena");
-        objectCalculator.sum(2,3,4);
-        System.out.println(objectCalculator.substract(2,3,4,5));
-        System.out.println(objectCalculator.multiply(2,3,4));
+        objectCalculator.sum(2, 3, 4);
+        System.out.println(objectCalculator.substract(2, 3, 4, 5));
+        System.out.println(objectCalculator.multiply(2, 3, 4));
         //ex 2
         operatii.writeArray();
         //ex 3
-        int [] array = new int[50];
+        int[] array = new int[50];
         int[] arrayplin = operatii.evenArray(array);
-        for(int i =0; i<50; i++){
+        for (int i = 0; i < 50; i++) {
             System.out.println(arrayplin[i]);
         }
         //ex 4
-        int [] arrayAverage = new int[]{2,3,4};
-        float average=operatii.averageArray(arrayAverage);
+        int[] arrayAverage = new int[]{2, 3, 4};
+        float average = operatii.averageArray(arrayAverage);
         System.out.println(average);
 
         //ex 5
-        String [] arrayName= new String[]{"Mihai", "Alin", "Calin"};
-        String name=new String("Alin");
-        boolean verify=operatii.verifyArray(arrayName, name);
+        String[] arrayName = new String[]{"Mihai", "Alin", "Calin"};
+        String name = "Alin";
+        boolean verify = operatii.verifyArray(arrayName, name);
         System.out.println(verify);
         //ex 6
-        int [] arrayNumbers=new int[]{2,3,9,5,7,};
-        int numar=4;
-        int pole=operatii.position(arrayNumbers,numar);
+        int[] arrayNumbers = new int[]{2, 3, 9, 5, 7,};
+        int numar = 4;
+        int pole = operatii.position(arrayNumbers, numar);
         System.out.println(pole);
         //ex 7
         operatii.arrayMatrice();
 
         //ex 8
-        int [] arrayNr=new int[]{4,6,8,11,14,17,8};
-        int number=8;
-        int[] arrayNou =operatii.sirFaraNumar(arrayNr,number);
-        for(int i =0; i<arrayNou.length; i++){
-        System.out.println(arrayNou[i]);}
+        int[] arrayNr = new int[]{4, 6, 8, 11, 14, 17, 8};
+        int number = 8;
+        int[] arrayNou = operatii.sirFaraNumar(arrayNr, number);
+        for (int i = 0; i < arrayNou.length; i++) {
+            System.out.println(arrayNou[i]);
+        }
 
         // ex 9
 
@@ -121,44 +126,79 @@ public class Main {
         System.out.println(lowest);
 
         // ex 10
-        int [] arrayone=new int[]{1,2,3,4,5};
-        int [] arraytwo= new int[5];
-        int [] arrayBun=operatii.twoArray(arrayone, arraytwo);
-        for(int i =0; i<arrayBun.length;i++){
-        System.out.println(arrayBun[i]);}
+        int[] arrayone = new int[]{1, 2, 3, 4, 5};
+        int[] arraytwo = new int[5];
+        int[] arrayBun = operatii.twoArray(arrayone, arraytwo);
+        for (int i = 0; i < arrayBun.length; i++) {
+            System.out.println(arrayBun[i]);
+        }
 
         //Tema optionala Arrays
         //ex 1
-        int [] sir = new int[]{3,9,6,7,8,10};
+        int[] sir = new int[]{3, 9, 6, 7, 8, 10};
         operatii.findSecondLowest(sir);
         //ex 2
-        int [] sirDat= new int[]{3,4,5,6,7,9};
+        int[] sirDat = new int[]{3, 4, 5, 6, 7, 9};
         operatii.insertElement(sirDat, 4, 2);
         //ex 3
         int[] sirSecond = new int[]{4, 5, 1, 2, 5, 7};
         operatii.findMinMax(sirSecond);
         //ex 4
-        int [] arr1=new int[]{1,2,3};
+        int[] arr1 = new int[]{1, 2, 3};
         operatii.reverse(arr1);
         //ex 5
         operatii.findAllDuplicates();
         //ex 6
         operatii.compareArr();
         //ex 7
-        int [] sirNesort= new int[]{2,5,8,9,3,1};
-        int [] sirSortat= operatii.sort(sirNesort);
-        for(int i=0; i<sirSortat.length; i++){
+        int[] sirNesort = new int[]{2, 5, 8, 9, 3, 1};
+        int[] sirSortat = operatii.sort(sirNesort);
+        for (int i = 0; i < sirSortat.length; i++) {
             System.out.println(sirSortat[i]);
         }
-
-
-
-
-
-
-
-
-
+        // Tema Liste
+        //ex 1
+        List nameList = new ArrayList<String>();
+        nameList.add("copil");
+        nameList.add("inghetata");
+        nameList.add("jocuri");
+        operatii.showList(nameList);
+        //ex 2
+        List nume = new ArrayList<Integer>();
+        nume.add(3);
+        nume.add(4);
+        nume.add(7);
+        operatii.addNumber(nume, 9);
+        //ex 3
+        List num = List.of(3, 4, 5, 6, 8, 9, 10);
+        operatii.showFromNumber(num, 6);
+        //ex 4
+        List myList = List.of(3, 4, 5, 6, 8, 9, 10);
+        operatii.reverseList(myList);
+        // ex 5
+        List nume2 = new ArrayList();
+        nume2.add("copil");
+        nume2.add("casa");
+        nume2.add("masa");
+        nume2.add("bicileta");
+        operatii.addNumberForIndex(nume2, 3, "scaun");
+        //ex 6
+        List numere = new ArrayList<Integer>();
+        numere.add(3);
+        numere.add(4);
+        numere.add(7);
+        operatii.addFirstNumber(numere, 8);
+        //ex 7
+        List myL = List.of(3, 4, 5, 6, 8, 9, 10);
+        operatii.displayList(myL);
+        //ex 8
+        List nesortata = new ArrayList<Integer>();
+        nesortata.add(3);
+        nesortata.add(4);
+        nesortata.add(7);
+        nesortata.add(2);
+        nesortata.add(1);
+        operatii.returnBiggest(nesortata);
 
 
     }

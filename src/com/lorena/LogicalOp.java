@@ -1,6 +1,8 @@
 package com.lorena;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class LogicalOp {
     // ex 3
@@ -80,20 +82,12 @@ public class LogicalOp {
 
     // ex 9
     public boolean isNumberEven(double i) {
-        if (i % 2 == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return i % 2 == 0;
     }
 
     //ex 10
     public boolean isEligibleToVote(int v) {
-        if (v >= 18) {
-            return true;
-        } else {
-            return false;
-        }
+        return v >= 18;
     }
 
     //ex 11
@@ -310,7 +304,6 @@ public class LogicalOp {
                 }
                 if (i % 5 == 0) {
                     text = text + "Loza";
-                    ;
                 }
                 if (i % 7 == 0) {
                     text = text + "Woza";
@@ -532,6 +525,61 @@ public class LogicalOp {
     public int[] sort(int[] arr) {
         Arrays.sort(arr);
         return arr;
+    }
+
+    // Tema Liste
+    //ex 1
+    public void showList(List numelista) {
+        numelista.forEach(element -> System.out.println(element));
+
+    }
+
+    //ex 2
+    public void addNumber(List numeLista, int a) {
+        numeLista.add(a);
+        System.out.println(numeLista.toString());
+    }
+
+    //ex 3
+    public void showFromNumber(List nume, int a) {
+
+        for (int i = nume.indexOf(a); i < nume.size(); i++) {
+            System.out.println(nume.get(i));
+        }
+    }
+
+    //ex 4
+    public void reverseList(List nume) {
+        for (int i = nume.size() - 1; i >= 0; i--) {
+            System.out.println(nume.get(i));
+        }
+    }
+
+    //ex 5
+    public void addNumberForIndex(List<String> nume, int a, String b) {
+        nume.add(a, b);
+        System.out.println(nume.toString());
+
+    }
+
+    //ex 6
+    public void addFirstNumber(List nume, int a) {
+        nume.add(0, a);
+        System.out.println(nume.toString());
+    }
+
+    //ex 7
+    public void displayList(List nume) {
+        for (int i = 0; i < nume.size(); i++) {
+            System.out.println("Pe pozitia " + i + " valoarea este " + nume.get(i));
+        }
+    }
+
+    //ex 8
+    public int returnBiggest(List<Integer> nume) {
+        Collections.sort(nume);
+        System.out.println(nume.get(nume.size() - 1));
+        return nume.get(nume.size() - 1);
     }
 
 
