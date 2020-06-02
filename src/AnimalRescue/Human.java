@@ -1,11 +1,16 @@
 package AnimalRescue;
 
-public class Human {
+public abstract class Human {
     private String name;
-    public void setName(String newName){
-        this.name= newName;
+
+    public void setName(String newName) {
+        this.name = newName;
     }
-    public String getName(){
+
+    public String getName() {
         return name;
     }
+
+    public abstract void doJob();
+
 }

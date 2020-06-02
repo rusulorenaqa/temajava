@@ -82,11 +82,23 @@ public class AnimalRescueMain {
         dog.eatFood();
         cat.eatFood();
 
-        Duck duck= new Duck();
+        Duck duck = new Duck();
         duck.setName("Donald");
         duck.setFavoriteActivity(activity2);
         duck.fly();
         duck.eatFood();
         duck.executeActivity();
+
+        medic1.doJob();
+        rescuer1.doJob();
+        cat.speak();
+        cat.swim();
+        cat.numberOfLegs();
+        dog.speak();
+        dog.swim();
+        dog.numberOfLegs();
+        duck.swim();
+        duck.speak();
+        duck.numberOfLegs();
     }
 }
