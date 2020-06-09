@@ -130,6 +130,7 @@ public class Calculator {
     }
 
     public double average(double a, double b, double c) {
+        System.out.println("Media numerelor este: " + (a + b + c) / 3);
         return ((a + b + c) / 3);
     }
     public double average(double a, double b, double c, double d) {
@@ -146,6 +147,7 @@ public class Calculator {
     }
 
     public int restImpartire(int a, int b) {
+        System.out.println("Restul impartirii numerelor este: "+ (a % b) );
         return a % b;
     }
 

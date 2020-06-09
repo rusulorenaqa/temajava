@@ -102,6 +102,7 @@ public class LogicalOp {
         if (c > maxim) {
             maxim = c;
         }
+        System.out.println("Cel mai mare numar este: "+ maxim);
         return maxim;
     }
 
@@ -354,6 +355,7 @@ public class LogicalOp {
             sum = sum + array[i];
             count = count + 1;
         }
+        System.out.println("Media sirului este: "+ sum / count );
         return sum / count;
     }
     //ex 5
