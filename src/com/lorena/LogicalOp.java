@@ -606,16 +606,40 @@ public class LogicalOp {
 
 
     }
+
     //ex 3
-    public List sortList( List<Integer> nume){
-        nume.sort((elem1, elem2)->elem1-elem2);
+    public List sortList(List<Integer> nume) {
+        nume.sort((elem1, elem2) -> elem1 - elem2);
         System.out.println(nume.toString());
         return nume;
     }
 
+    // Tema Error
+    // ex 5
+    public void lista(int[] sir, int a) {
 
+        try {
+            System.out.println(sir[a]);
+        } catch (ArrayIndexOutOfBoundsException Error) {
+            System.out.println("Inside catch, number too large");
+
+        }
+
+    }
+
+    // ex 6
+    public void wait(int a) {
+        try {
+            Thread.sleep(a * 1000);
+        } catch (InterruptedException Error) {
+            System.out.println("Eroare");
+        }
+
+    }
 
 }
+
+
 
 
 

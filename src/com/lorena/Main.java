@@ -201,10 +201,9 @@ public class Main {
         operatii.returnBiggest(nesortata);
 
 
-
-    // Tema optionala Lists
-    // ex 1
-       List myLi = new ArrayList<Integer>();
+        // Tema optionala Lists
+        // ex 1
+        List myLi = new ArrayList<Integer>();
         myLi.add(1);
         myLi.add(2);
         myLi.add(3);
@@ -228,7 +227,25 @@ public class Main {
         myLista.add(8);
         operatii.sortList(myLista);
 
+        // Tema Try Catch
+        // ex 1
+        Read obiectRead = new Read();
+        obiectRead.getInt();
+        // ex 2
+        obiectRead.getDouble();
+        obiectRead.getFloat();
+        obiectRead.getLong();
+        // ex 3
+        obiectRead.getArray(5);
+        // ex 4
+        obiectRead.getList();
+        // ex 5
+        int[] list = new int[]{1, 2, 3, 4, 5};
+        operatii.lista(list, 4);
+        // ex 6
+        operatii.wait(10);
 
 
+    }
+}
 
-}}
