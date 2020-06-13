@@ -612,7 +612,7 @@ public class LogicalOp {
     //ex 3
     public List sortList(List<Integer> nume) {
         nume.sort((elem1, elem2) -> elem1 - elem2);
-        System.out.println(nume.toString());
+        System.out.println("Lista sortata: " + nume.toString());
         return nume;
     }
 

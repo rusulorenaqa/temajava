@@ -108,10 +108,10 @@ public class Read {
     }
 
     // ex 4
-    public List<Integer> getList() {
+    public List<Integer> getList(int a) {
         List myList = new ArrayList();
         int i = 0;
-        boolean repeat = true;
+
 
         do {
 
@@ -120,14 +120,16 @@ public class Read {
                 System.out.print("Enter a number: ");
                 i = scanner.nextInt();
                 myList.add(i);
-                repeat = true;
+
+
 
             } catch (InputMismatchException error) {
-                repeat = false;
-                System.out.println(myList.toString());
+
+                System.out.println("Insert a number! ");
             }
         }
-        while (repeat == true);
+        while (myList.size()!=a);
+        System.out.println("Lista intiala este: " + myList.toString());
         return myList;
 
 
@@ -135,5 +137,25 @@ public class Read {
 
 
     // ex 5
+    public String getString(String text){
+
+
+    boolean repeat = true;
+    String myString = " ";
+        do {
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Enter " + text);
+            myString= scanner.next();
+
+            repeat = false;
+
+        } catch (InputMismatchException error) {
+            System.out.println("Incorrect value entered, pls try again.");
+        }
+    } while (repeat == true);
+        return myString;
+}
+
     // ex 6
 }

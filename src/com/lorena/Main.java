@@ -238,7 +238,7 @@ public class Main {
         // ex 3
         obiectRead.getArray(5);
         // ex 4
-        obiectRead.getList();
+        obiectRead.getList(7);
         // ex 5
         int[] list = new int[]{1, 2, 3, 4, 5};
         operatii.lista(list, 4);
